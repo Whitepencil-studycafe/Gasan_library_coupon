@@ -149,6 +149,29 @@ h1 .hl{color:var(--green-mid)}
 .review-btn.naver:hover{filter:brightness(.95)}
 .review-btn.kakao{background:#fef01b;color:#3a1d00;border:1px solid #e8d800}
 .review-btn.kakao:hover{filter:brightness(.97)}
+
+
+/* ── 하단 방문자 카운터 ── */
+.visit-counter-bottom{
+  width:100%;
+  max-width:860px;
+  margin-top:18px;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  gap:6px;
+  font-size:11px;
+  font-weight:700;
+  color:var(--ink3);
+  text-align:center;
+}
+.visit-counter-bottom img{
+  height:20px;
+  width:auto;
+  display:block;
+  border-radius:0;
+}
+
 </style>
 </head>
 <body>
@@ -290,6 +313,15 @@ h1 .hl{color:var(--green-mid)}
   10시간권 구매 시 할인된 금액으로 구매 가능합니다.<br>
   휴관일이 지나면 쿠폰이 소멸됩니다.
 </p>
+
+
+<!-- 하단 방문자 카운터 -->
+<div class="visit-counter-bottom">
+  <span>방문현황</span>
+  <img
+    src="https://hitscounter.dev/api/hit?url=https%3A%2F%2Fyoosangbeom.github.io%2FGasan_library_coupon%2F&label=%EB%B0%A9%EB%AC%B8&icon=people-fill&color=%232d6b3e&style=flat&tz=Asia%2FSeoul"
+    alt="화이트펜슬 도서관 혜택 방문자 카운터">
+</div>
 
 <script>
 const GAS_URL = 'https://script.google.com/macros/s/AKfycbzrnHaH_tCoPoQ9sdMjqlb1N0OMUYIFKAAIAAfQZUQniA4BJggoXaB1kmqTSQ6Y4r7x/exec';
